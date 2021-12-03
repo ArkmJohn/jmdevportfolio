@@ -1,0 +1,23 @@
+.phone-model {
+  width: 300px;
+  height: 600px;
+}
+
+.my-slider-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  -webkit-transition: width 400ms ease;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+.splide__slide {
+  min-height: 50vh;
+  color: black;
+  background-color: lightblue;
+}
+
+.splide__slide img {
+  width: 60vw;
+}
+/*# sourceMappingURL=home.css.map */

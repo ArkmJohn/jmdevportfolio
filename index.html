@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>John Mark Adriano</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
+        <script defer src="/assets/fontawesome/js/all.js"></script> <!--load all styles -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="js/splide-3.6.9/dist/css/splide.min.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="full-section">
+            <section-content>
+                <div class="full-width flex full-height content-center text-left" style="padding: 10vh 0;">
+                    <div>
+                        <h1 style="margin: 1vh 0;" class="huge-title">John Mark</h1>
+                        <div class="subtitle">
+                            <h4>Front-End / Game Developer</h4>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-bitbucket"></i>
+                            <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+                <model-viewer class="phone-model absolute-right" src="assets/scene.gltf" camera-controls auto-rotate></model-viewer>
+            </section-content>
+        </section>
+        <section class="full-section background-white">
+            <section-content>
+                <div class="splide">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src='/assets//portfolio/nftfoh.png'/>
+                                </li>
+                                <li class="splide__slide">Slide 02</li>
+                                <li class="splide__slide">Slide 03</li>
+                            </ul>
+                    </div>
+                    <div class="my-slider-progress">
+                        <div class="my-slider-progress-bar"></div>
+                    </div>
+                </div>
+            </section-content>
+        </section>
+
+        <script src="" async defer></script>
+        <script>
+            var splide = new Splide('.splide');
+            var bar = splide.root.querySelector('.my-slider-progress-bar');
+            splide.on('mounted move', function () {
+                var end = splide.Components.Controller.getEnd() + 1;
+                bar.style.width = String(100*(splide.index + 1)/end) + '%';
+            });
+            
+            splide.mount();
+        </script>
+    </body>
+</html>
