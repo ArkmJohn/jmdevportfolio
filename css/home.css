@@ -211,8 +211,8 @@
 }
 
 .home-menu-section .button-skills .skills-svg .skills-rect-container {
-  -webkit-transform: translateX(20px) translateY(5px) rotate(-30deg);
-          transform: translateX(20px) translateY(5px) rotate(-30deg);
+  -webkit-transform: translateX(15vw) translateY(33vh) rotate(-40deg);
+          transform: translateX(15vw) translateY(33vh) rotate(-40deg);
 }
 
 .home-menu-section .button-skills .skills-svg .skills-rect-container .skills-rect {
@@ -220,13 +220,12 @@
 }
 
 .home-menu-section .button-skills .skills-svg .skills-ribbon-container {
-  -webkit-transform: translateX(20px) translateY(130px) rotate(-50deg);
-          transform: translateX(20px) translateY(130px) rotate(-50deg);
+  -webkit-transform: translateX(3vw) translateY(30vh) rotate(50deg);
+          transform: translateX(3vw) translateY(30vh) rotate(50deg);
 }
 
 .home-menu-section .button-skills .skills-svg .skills-ribbon-container .skills-ribbon {
   fill: #E5E1FC;
-  opacity: .8;
 }
 
 .home-menu-section .button-contact {
@@ -237,10 +236,24 @@
   height: 40vh;
   background: #797EDA;
   width: 22.5vw;
+  overflow: hidden;
 }
 
 .home-menu-section .button-contact h3 {
   margin-top: .25em;
+}
+
+.home-menu-section .button-contact .contact-svg .contact-circle {
+  fill: #FF7826;
+}
+
+.home-menu-section .button-contact .contact-svg .contact-ribbon-container {
+  -webkit-transform: translateX(15vw) translateY(15vh) rotate(-50deg);
+          transform: translateX(15vw) translateY(15vh) rotate(-50deg);
+}
+
+.home-menu-section .button-contact .contact-svg .contact-ribbon-container .contact-ribbon {
+  fill: #E5E1FC;
 }
 
 @-webkit-keyframes dash {
