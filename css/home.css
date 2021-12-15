@@ -1,6 +1,6 @@
 .phone-model {
-  width: 300px;
-  height: 600px;
+  height: 90vh;
+  width: 40vw;
 }
 
 .my-slider-progress-bar {
@@ -19,5 +19,297 @@
 
 .splide__slide img {
   width: 60vw;
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.home-menu-section {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'project project' 'about about' 'skills contact' 'skills contact';
+  width: 45vw;
+  padding: 0;
+}
+
+.home-menu-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 3.5em;
+  overflow: hidden;
+}
+
+.home-menu-section .button-project {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: project;
+  background: #3540FA;
+  height: 30vh;
+}
+
+.home-menu-section .button-project h3 {
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-left: 5vw;
+  margin-bottom: .25em;
+}
+
+.home-menu-section .button-project .projects-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-project .projects-svg .projects-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in-out 1;
+          animation: dash 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-project .projects-svg .projects-circle {
+  fill: #FF7826;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-project .projects-svg .projects-rect-container {
+  -webkit-transform: translateX(570px) translateY(75px) rotate(-50deg);
+          transform: translateX(570px) translateY(75px) rotate(-50deg);
+}
+
+.home-menu-section .button-project .projects-svg .projects-rect-container .projects-rect {
+  fill: #E5E1FC;
+  opacity: .8;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-project .projects-svg .projects-ribbon-container {
+  -webkit-transform: translateX(650px) translateY(-20px) rotate(50deg);
+          transform: translateX(650px) translateY(-20px) rotate(50deg);
+}
+
+.home-menu-section .button-project .projects-svg .projects-ribbon-container .projects-ribbon {
+  fill: #797EDA;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-project:hover h3 {
+  padding-left: 6vw;
+}
+
+.home-menu-section .button-project:hover h3:before {
+  content: '>';
+}
+
+.home-menu-section .button-project:hover h3:after {
+  content: '<';
+}
+
+.home-menu-section .button-project:hover .projects-svg .projects-line-path {
+  -webkit-animation: circle-set .2s ease-in-out 1;
+          animation: circle-set .2s ease-in-out 1;
+  stroke-dashoffset: 0;
+}
+
+.home-menu-section .button-project:hover .projects-svg .projects-circle {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-project:hover .projects-svg .projects-rect-container .projects-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-project:hover .projects-svg .projects-ribbon-container .projects-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+  background: #FF7826;
+  height: 30vh;
+}
+
+.home-menu-section .button-about h3 {
+  padding-left: 5vw;
+}
+
+.home-menu-section .button-about .about-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-about .about-svg .about-circle {
+  fill: #3540FA;
+}
+
+.home-menu-section .button-about .about-svg .about-line-container {
+  -webkit-transform: translateX(220px) translateY(-20px);
+          transform: translateX(220px) translateY(-20px);
+}
+
+.home-menu-section .button-about .about-svg .about-rect-container {
+  -webkit-transform: translateX(550px) translateY(200px) rotate(-30deg);
+          transform: translateX(550px) translateY(200px) rotate(-30deg);
+}
+
+.home-menu-section .button-about .about-svg .about-rect-container .about-rect {
+  fill: #E5E1FC;
+  opacity: .8;
+}
+
+.home-menu-section .button-about .about-svg .about-ribbon-container {
+  -webkit-transform: translateX(400px) translateY(130px) rotate(-50deg);
+          transform: translateX(400px) translateY(130px) rotate(-50deg);
+}
+
+.home-menu-section .button-about .about-svg .about-ribbon-container .about-ribbon {
+  fill: #797EDA;
+}
+
+.home-menu-section .button-skills {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: skills;
+  height: 40vh;
+  background: #080222;
+  width: 22.5vw;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+}
+
+.home-menu-section .button-skills h3 {
+  margin-top: .25em;
+}
+
+.home-menu-section .button-skills .skills-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-skills .skills-svg .skills-line-container {
+  -webkit-transform: translateX(-5vw) translateY(15vh) scale(1.3);
+          transform: translateX(-5vw) translateY(15vh) scale(1.3);
+}
+
+.home-menu-section .button-skills .skills-svg .skills-rect-container {
+  -webkit-transform: translateX(20px) translateY(5px) rotate(-30deg);
+          transform: translateX(20px) translateY(5px) rotate(-30deg);
+}
+
+.home-menu-section .button-skills .skills-svg .skills-rect-container .skills-rect {
+  fill: #797EDA;
+}
+
+.home-menu-section .button-skills .skills-svg .skills-ribbon-container {
+  -webkit-transform: translateX(20px) translateY(130px) rotate(-50deg);
+          transform: translateX(20px) translateY(130px) rotate(-50deg);
+}
+
+.home-menu-section .button-skills .skills-svg .skills-ribbon-container .skills-ribbon {
+  fill: #E5E1FC;
+  opacity: .8;
+}
+
+.home-menu-section .button-contact {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: contact;
+  height: 40vh;
+  background: #797EDA;
+  width: 22.5vw;
+}
+
+.home-menu-section .button-contact h3 {
+  margin-top: .25em;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@-webkit-keyframes circle-set {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+}
+
+@keyframes circle-set {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
 }
 /*# sourceMappingURL=home.css.map */

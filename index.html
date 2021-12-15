@@ -12,11 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="assets/crystals/model-styles.css">
         <script defer src="/assets/fontawesome/js/all.js"></script> <!--load all styles -->
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="js/splide-3.6.9/dist/css/splide.min.css">
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
@@ -26,24 +29,95 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <header>
+            <!-- <div class="header-one">
+                <burger>
+                </burger>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div> -->
+            <div class="header-title">
+                <a href="#"><h2>John Mark Adriano</h2></a>
+            </div>
+        </header>
+        <!-- <div  id="particles-js" ></div> -->
         <section class="full-section">
             <section-content>
-                <div class="full-width flex full-height content-center text-left" style="padding: 10vh 0;">
+                <section-content-left class="flex full-height content-bottom text-left">
                     <div>
-                        <h1 style="margin: 1vh 0;" class="huge-title">John Mark</h1>
-                        <div class="subtitle">
-                            <h4>Front-End / Game Developer</h4>
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fab fa-bitbucket"></i>
-                            <i class="far fa-envelope"></i>
+                        <h1 style="margin: 1vh 0; line-height: 1em;" class="huge-title">As long as it
+                            makes sense</h1>
+                        <div style="min-height: 100px;" class="subtitle">
+                            <p style="margin: 1vh 0;" id="typed">
+                                <div id="typed-strings">
+                                    <h4>John Mark Here, I'm a programmer.</h4>
+                                    <h4>John Mark Here, I'm a problem-solver.</h4>
+                                    <h4>John Mark Here, I'm a developer.</h4>
+                                    <h4>John Mark Here, I'm a solution maker.</h4>
+                                    <h4>John Mark Here, I'm a software engineer.</h4>
+                                    <h4>John Mark Here, I'm a game creator.</h4>
+                                </div>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <model-viewer class="phone-model absolute-right" src="assets/scene.gltf" camera-controls auto-rotate></model-viewer>
+                </section-content-left>
+                <section-content-right class="home-menu-section full-height">
+                    <a class="button-project flex content-bottom text-left" href="">
+                        <h3>Projects</h3>
+                        <svg class="projects-svg" width="45vw" height="30vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="projects-line-path" d="M599.024 298.74C547.821 248.11 531.989 145.53 430.275 140.246C303.133 133.643 297.899 185.653 228.33 83.2929C158.762 -19.0677 77.6351 -1.73754 0.87002 11.4703" stroke="white" stroke-width="2"/>
+                            <circle class="projects-circle" cx="500" cy="-10" r="50"/>
+                            <g class="projects-rect-container">
+                                <rect class="projects-rect" x="0" y="0" width="50" height="25" rx="0"/>
+                            </g>
+                            <g class="projects-ribbon-container">
+                                <rect class="projects-ribbon" x="0" y="0" width="150" height="10" rx="0"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="button-about flex content-center-left" href="">
+                        <h3>About Me</h3>
+                        <svg class="about-svg" width="45vw" height="30vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="about-circle" cx="45vw" cy="25vh" r="50"/>
+                            <g class="about-line-container">
+                                <path class="about-line-path" d="M2.57647 0.862732C-1.79012 39.2405 12.6196 116.997 105.191 121.002C220.905 126.008 290.771 58.4294 354.086 136.019C417.402 213.609 426.135 228.627 496 218.615" stroke="white" stroke-width="2"/>
+                            </g>
+                            <g class="about-rect-container">
+                                <rect class="about-rect" x="0" y="0" width="30" height="15" rx="0"/>
+                            </g>
+                            <g class="about-ribbon-container">
+                                <rect class="about-ribbon" x="0" y="0" width="80" height="10" rx="0"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="button-skills" href="">
+                        <h3>Skills</h3>
+                        <svg class="skills-svg" width="22.5vw" height="40vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="skills-line-container">
+                                <path d="M2.48573 0.654541C-1.42534 40.3931 11.4811 120.907 94.3955 125.053C198.039 130.237 260.615 60.2623 317.326 140.603C374.036 220.944 381.858 236.494 444.435 226.127" stroke="#FF7826" stroke-width="2"/>
+                            </g>
+                            <g class="skills-rect-container">
+                                <rect class="skills-rect" x="0" y="0" width="30" height="15" rx="0"/>
+                            </g>
+                            <g class="skills-ribbon-container">
+                                <rect class="skills-ribbon" x="0" y="0" width="80" height="10" rx="0"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="button-contact" href=""><h3>Contact</h3></a>
+                </section-content-right>
+                <!-- <model-viewer style="z-index:1;" auto-rotate bounds="tight" class="absolute-center phone-model" src="/assets/crystals/scene-2.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" shadow-intensity="1">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer> -->
             </section-content>
         </section>
-        <section class="full-section background-white">
+        <!-- <section class="full-section background-white">
             <section-content>
                 <div class="splide">
                     <div class="splide__track">
@@ -60,18 +134,52 @@
                     </div>
                 </div>
             </section-content>
-        </section>
+        </section> -->
 
         <script src="" async defer></script>
         <script>
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 1,
+                loop: true,
+                loopCount: Infinity,
+                smartBackspace: true
+            });
+
+            document.getElementById("proj-anim").beginElement();
+        </script>
+        <!-- <script>
             var splide = new Splide('.splide');
             var bar = splide.root.querySelector('.my-slider-progress-bar');
             splide.on('mounted move', function () {
                 var end = splide.Components.Controller.getEnd() + 1;
                 bar.style.width = String(100*(splide.index + 1)/end) + '%';
             });
-            
             splide.mount();
         </script>
+        <script>
+            // Handles loading the events for <model-viewer>'s slotted progress bar
+            const onProgress = (event) => {
+            const progressBar = event.target.querySelector('.progress-bar');
+            const updatingBar = event.target.querySelector('.update-bar');
+            updatingBar.style.width = `${event.detail.totalProgress * 100}%`;
+            if (event.detail.totalProgress === 1) {
+                progressBar.classList.add('hide');
+            } else {
+                progressBar.classList.remove('hide');
+                
+                if (event.detail.totalProgress === 0) {
+                    //event.target.querySelector('.center-pre-prompt').classList.add('hide');
+                }
+            }
+            };
+            document.querySelector('model-viewer').addEventListener('progress', onProgress);
+        </script> -->
+
+        <!-- <script>
+            particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script> -->
     </body>
 </html>

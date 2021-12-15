@@ -1,13 +1,23 @@
 body {
-  color: #f1f1f1;
-  font-family: "Outfit", sans-serif;
+  color: #080222;
+  font-family: "Lato", sans-serif;
   margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2em;
+}
+
 section {
-  background-color: #080222;
+  background-color: #fff;
 }
 
 .full-section {
@@ -22,10 +32,12 @@ section {
 }
 
 section-content {
-  min-width: 80vw;
-  min-height: 80vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,6 +45,18 @@ section-content {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+section-content-left {
+  width: 45vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+section-content-right {
+  width: 35vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .full-height {
@@ -66,6 +90,15 @@ section-content {
   right: 10vw;
 }
 
+.absolute-center {
+  position: absolute;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .text-left {
   text-align: left;
 }
@@ -74,8 +107,18 @@ section-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-center-left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .content-bottom {
@@ -89,5 +132,78 @@ section-content {
 
 .huge-title {
   font-size: 7em;
+}
+
+.normal-title {
+  font-size: 3em;
+}
+
+header .header-one {
+  z-index: 9999;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+header .header-one ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+header .header-one ul li {
+  padding: 0 2vw;
+  text-decoration: none;
+  list-style: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header-one ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header-one ul li:hover {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+}
+
+header .header-title a {
+  color: #080222;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1em;
 }
 /*# sourceMappingURL=style.css.map */

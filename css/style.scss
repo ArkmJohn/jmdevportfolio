@@ -1,7 +1,11 @@
 
-$backgroundColor: #080222;
-$baseFontColor: #f1f1f1;
-$baseFont: 'Outfit', sans-serif;
+$backgroundColor: #fff; 
+$baseFontColor: #080222;
+$baseFont: 'Lato', sans-serif;
+$titleFont: 'Anton', sans-serif;
+$blueColor: #3540FA;
+$orangeColor: #FF7826;
+$purpleColor: #797EDA;
 
 body{
     color: $baseFontColor;
@@ -9,6 +13,16 @@ body{
     margin: 0;
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    font-family: $titleFont;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.2em;
 }
 
 section{
@@ -27,12 +41,25 @@ section{
 }
 
 section-content{
-    min-width: 80vw;
-    min-height: 80vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+section-content-left{
+    width: 45vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+section-content-right{
+    width: 35vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .full-height{
@@ -58,13 +85,24 @@ section-content{
     right: 10vw;
 }
 
+.absolute-center{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+
 .text-left{
     text-align: left;
 }
 
 .content-center{
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+}
+
+.content-center-left{
+    align-items: center;
+    justify-content: left;
 }
 
 .content-bottom {
@@ -74,4 +112,53 @@ section-content{
 
 .huge-title{
     font-size: 7em;
+}
+
+.normal-title{
+    font-size: 3em;
+}
+
+header{
+    .header-one{
+        z-index: 9999;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            li{
+                padding: 0 2vw;
+                text-decoration: none;
+                list-style: none;
+                transition: .3s;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            li:hover{
+                text-decoration: underline;
+                font-size: 1.2em;
+            }
+        }
+    }
+    .header-title{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        a{
+            color: $baseFontColor;
+            text-decoration: none;
+            font-size: .8em;
+            letter-spacing: 1em;
+        }
+    }
 }
