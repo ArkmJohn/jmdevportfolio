@@ -1,0 +1,59 @@
+$backgroundColor: #fff;
+$baseFontColor: #080222;
+$baseFont: 'Lato',
+sans-serif;
+$titleFont: 'Anton',
+sans-serif;
+$blueColor: #3540FA;
+$orangeColor: #FF7826;
+$purpleColor: #797EDA;
+
+section-content{
+    height: auto;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.header-title{
+    a{
+        h2{
+            color: $backgroundColor !important;
+        }
+    }
+}
+.about-content-pic{
+    width:45vw;
+    padding-left: 0;
+    padding-right: 0;
+    float: right;
+    z-index: 5;
+}
+.profile-pic{
+    object-fit: contain;
+    object-position: center;
+}
+
+.about-svg{
+    position: absolute;
+    z-index: 0;
+    .about-line-container{
+        .about-line-path{
+            transform: translateY(20vh);
+        }
+    }
+    .about-circle{
+        fill: $blueColor;
+    }
+    .about-rect-container{
+        transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+        .about-rect{
+            fill: #E5E1FC;
+        }
+    }
+    .about-ribbon-container{
+        transform: translateX(20vw) translateY(35vh) rotate(50deg);
+        .about-ribbon{
+            fill: $purpleColor;
+        }
+    }
+}

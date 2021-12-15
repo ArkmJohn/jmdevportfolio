@@ -1,0 +1,57 @@
+section-content {
+  height: auto;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.header-title a h2 {
+  color: #fff !important;
+}
+
+.about-content-pic {
+  width: 45vw;
+  padding-left: 0;
+  padding-right: 0;
+  float: right;
+  z-index: 5;
+}
+
+.profile-pic {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.about-svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.about-svg .about-line-container .about-line-path {
+  -webkit-transform: translateY(20vh);
+          transform: translateY(20vh);
+}
+
+.about-svg .about-circle {
+  fill: #3540FA;
+}
+
+.about-svg .about-rect-container {
+  -webkit-transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+          transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+}
+
+.about-svg .about-rect-container .about-rect {
+  fill: #E5E1FC;
+}
+
+.about-svg .about-ribbon-container {
+  -webkit-transform: translateX(20vw) translateY(35vh) rotate(50deg);
+          transform: translateX(20vw) translateY(35vh) rotate(50deg);
+}
+
+.about-svg .about-ribbon-container .about-ribbon {
+  fill: #797EDA;
+}
+/*# sourceMappingURL=about.css.map */

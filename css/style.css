@@ -31,6 +31,11 @@ section {
   color: black;
 }
 
+.background-orange {
+  background-color: #FF7826;
+  color: white;
+}
+
 section-content {
   min-width: 100vw;
   min-height: 100vh;
@@ -188,6 +193,7 @@ header .header-one ul li:hover {
 }
 
 header .header-title {
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
