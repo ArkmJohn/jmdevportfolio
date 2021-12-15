@@ -63,6 +63,7 @@ $purpleColor: #797EDA;
                 stroke-dashoffset: 1000;
                 animation: dash 3s ease-in-out 1;
                 animation-fill-mode: forwards;
+                transition: .2s;
             
             }
 
@@ -100,8 +101,9 @@ $purpleColor: #797EDA;
             }
             .projects-svg{
                 .projects-line-path{
-                    animation: circle-set .2s ease-in-out 1;
-                    stroke-dashoffset: 0;
+                    opacity: .5;
+                    stroke-width: 5;
+                    filter: blur(5px);
                 }
                 .projects-circle{
                     animation: circle-set .2s linear 1;
@@ -122,19 +124,30 @@ $purpleColor: #797EDA;
         grid-area: about;
         background: $orangeColor;
         height: 30vh;
-        h3{ padding-left: 5vw; }
+        h3 {
+            padding-left: 5vw;
+            transition: .3s;
+        }
         .about-svg{
             position: absolute;
             .about-circle{
                 fill: $blueColor;
+                animation: wave 2.5s ease-in-out infinite;
             }
             .about-line-container{
                 transform: translateX(220px) translateY(-20px);
+                .about-line-path{
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                    transition: .3s;
+                }
             }
             .about-rect-container {
                 transform: translateX(550px) translateY(200px) rotate(-30deg);
                 .about-rect{
-
+                    animation: wave 3.5s ease-in-out infinite;
                     fill: #E5E1FC;
                     opacity: .8;
                 }
@@ -142,7 +155,47 @@ $purpleColor: #797EDA;
             .about-ribbon-container {
                 transform: translateX(400px) translateY(130px) rotate(-50deg);
                 .about-ribbon {
+                    animation: wave 3s ease-in-out infinite;
                     fill: $purpleColor;
+                }
+            }
+        }
+
+        &:hover{
+            h3{
+                padding-left: 6vw;
+                &:before{
+                    content: '>';
+                }
+                &:after{
+                    content: '<';
+                }
+            }
+            .about-svg{
+                .about-line-container{
+                    .about-line-path{
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+                .about-circle{
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+
+                .about-rect-container{
+                    .about-rect{
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                .about-ribbon-container{
+                    .about-ribbon{
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
                 }
             }
         }
@@ -154,25 +207,65 @@ $purpleColor: #797EDA;
         width: 22.5vw;
         overflow: hidden;
         display: grid;
-        h3{margin-top: .25em}
+        h3{margin-top: .25em; padding-left: 5vw ;text-align: left; transition: .3s;}
         .skills-svg{
             position: absolute;
             .skills-line-container{
                 transform: translateX(-5vw) translateY(15vh) scale(1.3);
+                .skills-line-path{
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                }
             }
+            
             .skills-rect-container {
+                
                 transform: translateX(15vw) translateY(33vh) rotate(-40deg);
                 .skills-rect {
-
+                    animation: wave 3s ease-in-out infinite;
                     fill: $purpleColor;
                 }
             }
             .skills-ribbon-container {
                 transform: translateX(3vw) translateY(30vh) rotate(50deg);
                 .skills-ribbon {
+                    animation: wave 2.8s ease-in-out infinite;
                     fill: #E5E1FC;
                 }
             }         
+        }
+        &:hover{
+            h3{
+                padding-top: 2vh;
+                &:after{
+                    content: '..';
+                }
+            }
+            .skills-svg{
+                .skills-line-container{
+                    .skills-line-path {
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+                
+                .skills-rect-container {
+                    .skills-rect {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+                
+                .skills-ribbon-container {
+                    .skills-ribbon {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }   
         }
     }
     .button-contact{
@@ -181,18 +274,56 @@ $purpleColor: #797EDA;
         background: $purpleColor;
         width: 22.5vw;
         overflow: hidden;
-        h3{margin-top: .25em}
+        h3{margin-top: .25em; transition: .3s;}
 
         .contact-svg{
+            .contact-line-container{
+                .contact-line-path{
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                }
+            }
             .contact-circle{
                 fill: $orangeColor;
+                animation: wave 2.8s ease-in-out infinite;
             }
             .contact-ribbon-container{
                 transform: translateX(15vw) translateY(15vh) rotate(-50deg);
                 .contact-ribbon{
                     fill: #E5E1FC;
+                    animation: wave 3.5s ease-in-out infinite;
                 }
             }
+        }
+
+        &:hover{
+            h3{
+                padding-top: 2vh;
+                &:after{
+                    content: '..';
+                }
+            }
+            .contact-svg {
+                .contact-line-container {
+                    .contact-line-path {
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+                .contact-circle {
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+                .contact-ribbon-container {
+                    .contact-ribbon {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }   
         }
     }
 }
@@ -205,6 +336,20 @@ $purpleColor: #797EDA;
     100% {
         stroke-dashoffset: 0;
     }
+}
+
+@keyframes trace {
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    50%{
+        stroke-dashoffset: 500;
+    }
+    100%{
+        stroke-dashoffset: 100;
+    }
+
 }
 
 @keyframes wave {

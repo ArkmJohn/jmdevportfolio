@@ -69,6 +69,8 @@
           animation: dash 3s ease-in-out 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .home-menu-section .button-project .projects-svg .projects-circle {
@@ -113,9 +115,10 @@
 }
 
 .home-menu-section .button-project:hover .projects-svg .projects-line-path {
-  -webkit-animation: circle-set .2s ease-in-out 1;
-          animation: circle-set .2s ease-in-out 1;
-  stroke-dashoffset: 0;
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 .home-menu-section .button-project:hover .projects-svg .projects-circle {
@@ -150,6 +153,8 @@
 
 .home-menu-section .button-about h3 {
   padding-left: 5vw;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .home-menu-section .button-about .about-svg {
@@ -158,11 +163,24 @@
 
 .home-menu-section .button-about .about-svg .about-circle {
   fill: #3540FA;
+  -webkit-animation: wave 2.5s ease-in-out infinite;
+          animation: wave 2.5s ease-in-out infinite;
 }
 
 .home-menu-section .button-about .about-svg .about-line-container {
   -webkit-transform: translateX(220px) translateY(-20px);
           transform: translateX(220px) translateY(-20px);
+}
+
+.home-menu-section .button-about .about-svg .about-line-container .about-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in-out 1;
+          animation: dash 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .home-menu-section .button-about .about-svg .about-rect-container {
@@ -171,6 +189,8 @@
 }
 
 .home-menu-section .button-about .about-svg .about-rect-container .about-rect {
+  -webkit-animation: wave 3.5s ease-in-out infinite;
+          animation: wave 3.5s ease-in-out infinite;
   fill: #E5E1FC;
   opacity: .8;
 }
@@ -181,7 +201,49 @@
 }
 
 .home-menu-section .button-about .about-svg .about-ribbon-container .about-ribbon {
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
   fill: #797EDA;
+}
+
+.home-menu-section .button-about:hover h3 {
+  padding-left: 6vw;
+}
+
+.home-menu-section .button-about:hover h3:before {
+  content: '>';
+}
+
+.home-menu-section .button-about:hover h3:after {
+  content: '<';
+}
+
+.home-menu-section .button-about:hover .about-svg .about-line-container .about-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-about:hover .about-svg .about-circle {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-about:hover .about-svg .about-rect-container .about-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-about:hover .about-svg .about-ribbon-container .about-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .home-menu-section .button-skills {
@@ -199,6 +261,10 @@
 
 .home-menu-section .button-skills h3 {
   margin-top: .25em;
+  padding-left: 5vw;
+  text-align: left;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .home-menu-section .button-skills .skills-svg {
@@ -210,12 +276,23 @@
           transform: translateX(-5vw) translateY(15vh) scale(1.3);
 }
 
+.home-menu-section .button-skills .skills-svg .skills-line-container .skills-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in-out 1;
+          animation: dash 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .home-menu-section .button-skills .skills-svg .skills-rect-container {
   -webkit-transform: translateX(15vw) translateY(33vh) rotate(-40deg);
           transform: translateX(15vw) translateY(33vh) rotate(-40deg);
 }
 
 .home-menu-section .button-skills .skills-svg .skills-rect-container .skills-rect {
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
   fill: #797EDA;
 }
 
@@ -225,7 +302,38 @@
 }
 
 .home-menu-section .button-skills .skills-svg .skills-ribbon-container .skills-ribbon {
+  -webkit-animation: wave 2.8s ease-in-out infinite;
+          animation: wave 2.8s ease-in-out infinite;
   fill: #E5E1FC;
+}
+
+.home-menu-section .button-skills:hover h3 {
+  padding-top: 2vh;
+}
+
+.home-menu-section .button-skills:hover h3:after {
+  content: '..';
+}
+
+.home-menu-section .button-skills:hover .skills-svg .skills-line-container .skills-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-skills:hover .skills-svg .skills-rect-container .skills-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-skills:hover .skills-svg .skills-ribbon-container .skills-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .home-menu-section .button-contact {
@@ -241,10 +349,23 @@
 
 .home-menu-section .button-contact h3 {
   margin-top: .25em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home-menu-section .button-contact .contact-svg .contact-line-container .contact-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in-out 1;
+          animation: dash 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .home-menu-section .button-contact .contact-svg .contact-circle {
   fill: #FF7826;
+  -webkit-animation: wave 2.8s ease-in-out infinite;
+          animation: wave 2.8s ease-in-out infinite;
 }
 
 .home-menu-section .button-contact .contact-svg .contact-ribbon-container {
@@ -254,6 +375,37 @@
 
 .home-menu-section .button-contact .contact-svg .contact-ribbon-container .contact-ribbon {
   fill: #E5E1FC;
+  -webkit-animation: wave 3.5s ease-in-out infinite;
+          animation: wave 3.5s ease-in-out infinite;
+}
+
+.home-menu-section .button-contact:hover h3 {
+  padding-top: 2vh;
+}
+
+.home-menu-section .button-contact:hover h3:after {
+  content: '..';
+}
+
+.home-menu-section .button-contact:hover .contact-svg .contact-line-container .contact-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-contact:hover .contact-svg .contact-circle {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-contact:hover .contact-svg .contact-ribbon-container .contact-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes dash {
@@ -271,6 +423,30 @@
   }
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes trace {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes trace {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 100;
   }
 }
 
