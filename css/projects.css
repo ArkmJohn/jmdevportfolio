@@ -1,0 +1,66 @@
+section-content {
+  height: auto;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.header-title a h2 {
+  color: #fff !important;
+}
+
+.projects-content-pic {
+  width: 45vw;
+  padding-left: 0;
+  padding-right: 0;
+  float: right;
+  z-index: 5;
+}
+
+.profile-pic {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.projects-svg-line {
+  position: absolute;
+  z-index: 0;
+}
+
+.projects-svg-line .projects-line-container {
+  -webkit-transform: translateX(15vw) translateY(-3vh);
+          transform: translateX(15vw) translateY(-3vh);
+}
+
+.projects-svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.projects-svg .projects-circle {
+  fill: #3540FA;
+}
+
+.projects-svg .projects-rect-container {
+  -webkit-transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+          transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+}
+
+.projects-svg .projects-rect-container .projects-rect {
+  fill: #E5E1FC;
+}
+
+.projects-svg .projects-ribbon-container {
+  -webkit-transform: translateX(20vw) translateY(35vh) rotate(50deg);
+          transform: translateX(20vw) translateY(35vh) rotate(50deg);
+}
+
+.projects-svg .projects-ribbon-container .projects-ribbon {
+  fill: #797EDA;
+}
+
+.remove-arrows {
+  display: none;
+}
+/*# sourceMappingURL=projects.css.map */

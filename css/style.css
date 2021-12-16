@@ -1,3 +1,7 @@
+:root {
+  --bg-color: $blueColor;
+}
+
 body {
   color: #080222;
   font-family: "Lato", sans-serif;
@@ -34,6 +38,18 @@ section {
 .background-orange {
   background-color: #FF7826;
   color: white;
+}
+
+.background-blue {
+  background-color: #3540FA;
+  color: white;
+}
+
+.background-fade {
+  background-color: var(--bg-color);
+  color: white;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 section-content {
