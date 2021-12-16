@@ -26,6 +26,7 @@ section-content {
 .about-svg {
   position: absolute;
   z-index: 0;
+  top: 0;
 }
 
 .about-svg .about-line-container .about-line-path {

@@ -36,6 +36,7 @@ section-content{
 .about-svg{
     position: absolute;
     z-index: 0;
+    top: 0;
     .about-line-container{
         .about-line-path{
             transform: translateY(20vh);
