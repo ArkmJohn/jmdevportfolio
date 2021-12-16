@@ -63,4 +63,116 @@ section-content {
 .remove-arrows {
   display: none;
 }
+
+.home-menu-section {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'lot lot' 'vri nftfoh' 'eps wander' 'bdinc xcited';
+}
+
+.home-menu-section .home-lot {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: lot;
+}
+
+.home-menu-section .home-lot a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home-menu-section .home-vri {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: vri;
+}
+
+.home-menu-section .home-vri a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .home-nftfoh {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: nftfoh;
+}
+
+.home-menu-section .home-nftfoh a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .home-eps {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: eps;
+}
+
+.home-menu-section .home-eps a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .home-wander {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: wander;
+}
+
+.home-menu-section .home-wander a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .home-bdinc {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: bdinc;
+}
+
+.home-menu-section .home-bdinc a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .home-xcited {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: xcited;
+}
+
+.home-menu-section .home-xcited a img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
 /*# sourceMappingURL=projects.css.map */

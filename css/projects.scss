@@ -71,3 +71,90 @@ section-content {
 .remove-arrows{
     display: none;
 }
+
+.home-menu-section{
+    display: grid;
+    grid-template-areas: 'lot lot'
+    'vri nftfoh'
+    'eps wander'
+    'bdinc xcited';
+    .home-lot{
+        grid-area: lot;
+        a{
+            img{
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .home-vri{
+        grid-area: vri;
+        a{
+
+            img{
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .home-nftfoh{
+        grid-area: nftfoh;
+        a{
+
+            img{
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .home-eps {
+        grid-area: eps;
+        a {
+            img {
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .home-wander {
+        grid-area: wander;
+        a {
+            img {
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .home-bdinc {
+        grid-area: bdinc;
+        a {
+            img {
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    .home-xcited {
+        grid-area: xcited;
+        a {
+            img {
+                width: 100%;
+                height: 25vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+}

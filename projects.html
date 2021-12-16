@@ -17,12 +17,10 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="js/splide-3.6.9/dist/css/splide.min.css">
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
+        <script src="js/splide-3.6.9/dist/js/splide-extension-url-hash.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -38,10 +36,9 @@
         <section style="overflow: hidden; height: 100vh;" class="full-section background-fade">
             <div class="splide">
                 <div class="splide__track">
-                    
                     <ul class="splide__list">
-                        <li class="splide__slide">
-                            <svg class="projects-svg-line" width="55vw" height="700vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="splide__slide" data-splide-hash="home">
+                            <svg class="projects-svg-line" width="55vw" height="800vh" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g class="projects-line-container">
                                     <path class="projects-line-path" stroke="white" stroke-width="2" d="M641.24,1.5C593.14-8,495.7,23.45,490.68,225.79c-6.28,252.92,43.13,263.33-54.1,401.73S403.9,1135,442.94,1213c53.46,106.75,95.88,145.58,97.7,366.82,1.58,192.84-99.51,825.49-100,972.73-.53,156.93,91.45,327.27,59.36,772.72s-186.75,527.28-141.24,954.55S514.68,5443.45,495.84,5825.27s-100.66,754.55-73.39,1036.37,136.37,763.63,136.37,763.63"/>
                                 </g>
@@ -56,7 +53,7 @@
                                         <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
                                     </g>
                                 </svg>
-                                <section-content-left class="flex content-bottom text-left" style="height: auto;">
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
                                     
                                     <div>
                                         <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">some of my
@@ -77,11 +74,47 @@
                                     </div>
                                 </section-content-left>
                                 <section-content-right class="projects-content-pic full-height">
-                                    <img style="z-index: 5" class="profile-pic" src="assets/profile-pic.png"/>
+                                    <div class="home-menu-section">
+                                        <div class="home-lot">
+                                            <a href="javascript:GoToSlide(1);">
+                                                <img alt="Lot Designs" style="z-index: 5" src="assets/lot-designs-1.JPG"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-vri">
+                                            <a href="javascript:GoToSlide(2);">
+                                                <img alt="VR Immersive" style="z-index: 5" src="assets/portfolio/vr-image.png"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-nftfoh">
+                                            <a href="javascript:GoToSlide(3);">
+                                                <img alt="Not For the Faint of Heart" style="z-index: 5" src="assets/portfolio/nftfoh.webp"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-eps">
+                                            <a href="javascript:GoToSlide(4);">
+                                                <img alt="Emirates Post Shop" style="z-index: 5" src="assets/portfolio/emirates-post-1.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-wander">
+                                            <a href="javascript:GoToSlide(5);">
+                                                <img alt="The Wanderer" style="z-index: 5" src="assets/portfolio/thewanderer.png"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-bdinc">
+                                            <a href="javascript:GoToSlide(6);">
+                                                <img alt="BDInc" style="z-index: 5" src="assets/portfolio/bdi-1.JPG"/>
+                                            </a>
+                                        </div>
+                                        <div class="home-xcited">
+                                            <a href="javascript:GoToSlide(7);">
+                                                <img alt="xCited" style="z-index: 5" src="assets/portfolio/xcited.png"/>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </section-content-right>
                             </section-content>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-splide-hash="lot-designs">
                             <section-content>
                                 <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="projects-circle" cx="-25" cy="300" r="100"/>
@@ -92,21 +125,21 @@
                                         <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
                                     </g>
                                 </svg>
-                                <section-content-left class="flex content-bottom text-left" style="height: auto;">
-                                    
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
                                     <div>
-                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Project 1</h1>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Lot Designs</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae debitis commodi eveniet odio error saepe consectetur nihil ad, beatae ipsam accusantium! Sunt, odio accusamus aspernatur ipsam itaque amet in asperiores?
+                                            As I am currently working as the CTO and main developer of Lot Designs - a creative branding agency, I have developed and created the website. I have achieved the following site by following industry standard practices being used in Wordpress and its accompanying technologies.
                                         </p>
                                     </div>
                                 </section-content-left>
-                                <section-content-right class="projects-content-pic full-height">
-                                    <img style="z-index: 5" class="profile-pic" src="assets/profile-pic.png"/>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/lot-designs-1.JPG"/>
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/lot-designs-2.JPG"/>
                                 </section-content-right>
                             </section-content>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-splide-hash="vr-immersive">
                             <section-content>
                                 <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="projects-circle" cx="-25" cy="300" r="100"/>
@@ -117,21 +150,155 @@
                                         <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
                                     </g>
                                 </svg>
-                                <section-content-left class="flex content-bottom text-left" style="height: auto;">
+                                <section-content-left class="flex content-bottom text-left" style="height: 80vh;">
                                     
                                     <div>
-                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Project 2</h1>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">VR Immersive</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae debitis commodi eveniet odio error saepe consectetur nihil ad, beatae ipsam accusantium! Sunt, odio accusamus aspernatur ipsam itaque amet in asperiores?
+                                            With my internship on Zaini Media FZ LLC, I have created and lead the development of a few projects. All the projects showcased were completed in a span of 3 months and I had complete control of the development.
                                         </p>
                                     </div>
                                 </section-content-left>
-                                <section-content-right class="projects-content-pic full-height">
-                                    <img style="z-index: 5" class="profile-pic" src="assets/profile-pic.png"/>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/vr-image.png"/>
+                                    <video style="width: 100%; height: 50%; margin-top: -3vh" autoplay muted controls>
+                                        <source src="assets/zaini-vid.mp4" type="video/mp4">
+                                    </video>
                                 </section-content-right>
                             </section-content>
                         </li>
-                        
+                        <li class="splide__slide" data-splide-hash="nftfoh">
+                            <section-content>
+                                <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="projects-circle" cx="-25" cy="300" r="100"/>
+                                    <g class="projects-rect-container">
+                                        <rect class="projects-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                                    </g>
+                                    <g class="projects-ribbon-container">
+                                        <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                                    </g>
+                                </svg>
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
+                                    <div>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Not for the Faint of Heart</h1>
+                                        <p>
+                                            Not for the Faint of Heart is a virtual reality horror game where there is only one thing the player has to keep in mind- Escape. This project was made in Unity3D. The assets were created in 3ds max for 3D model, and Adobe Illustrator for UI. I was in-charge of VR implementation and Level Design of the game. I was also the lead game designer and was in control of the different design aspects of the game. This game was built for HTC Vive and Oculus Rift.                                        
+                                        </p>
+                                    </div>
+                                </section-content-left>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/nftfoh.webp"/>
+                                    <iframe style="width:100%; height: 50%;" src="https://www.youtube.com/embed/SUTIjJsXcdE?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </section-content-right>
+                            </section-content>
+                        </li>
+                        <li class="splide__slide" data-splide-hash="emirates-post">
+                            <section-content>
+                                <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="projects-circle" cx="-25" cy="300" r="100"/>
+                                    <g class="projects-rect-container">
+                                        <rect class="projects-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                                    </g>
+                                    <g class="projects-ribbon-container">
+                                        <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                                    </g>
+                                </svg>
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
+                                    <div>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Emirates Post Shop</h1>
+                                        <p>
+                                            The Emirates Post shop is the official ecommerce shop of the official postal service of the United Arab Emirates. As is, with the help of Zaini Media for the design, I have developed the site as a contractor using Woocommerce and Wordpress.
+                                        </p>
+                                    </div>
+                                </section-content-left>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover; object-position: left;" class="profile-pic" src="assets/portfolio/emirates-post-1.jpg"/>
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover; object-position: right;" class="profile-pic" src="assets/portfolio/emirates-post-2.jpg"/>
+                                </section-content-right>
+                            </section-content>
+                        </li>
+                        <li class="splide__slide" data-splide-hash="the-wanderer">
+                            <section-content>
+                                <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="projects-circle" cx="-25" cy="300" r="100"/>
+                                    <g class="projects-rect-container">
+                                        <rect class="projects-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                                    </g>
+                                    <g class="projects-ribbon-container">
+                                        <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                                    </g>
+                                </svg>
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
+                                    
+                                    <div>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">The Wanderer</h1>
+                                        <p>
+                                            A Isometric/ 3rd Person roguelike, dungeon crawler game whereas the protagonist traverses to different levels of increasingly difficult rounds trying to get to the top of the whole dungeon fighting different enemies and finding various amounts of loot while trying to survive using only his wits and items that will only last in a set amount of levels.
+                                        </p>
+                                        <p>
+                                            This Project was developed with Level Design, AI Development and Randomly Generated Objects in mind. With that said, I lead the project with a group of 3 programmers. I had ample work done on AI and Level Design. I was also in-charge of UI and level generation. ​
+                                        </p>
+                                    </div>
+                                </section-content-left>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/thewanderer.png"/>
+                                    <iframe style="width:100%; height: 50%;" src="https://www.youtube.com/embed/5iEkDwTsy7A?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </section-content-right>
+                            </section-content>
+                        </li>
+                        <li class="splide__slide" data-splide-hash="bdinc">
+                            <section-content>
+                                <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="projects-circle" cx="-25" cy="300" r="100"/>
+                                    <g class="projects-rect-container">
+                                        <rect class="projects-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                                    </g>
+                                    <g class="projects-ribbon-container">
+                                        <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                                    </g>
+                                </svg>
+                                <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
+                                    <div>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">The BDInc</h1>
+                                        <p>
+                                            The BDInc is a brand incubator focusing on health and beauty brands the help companies in the MENA region to grow. My team has been tasked to create a professional and creative site for them to use for their clients to view.
+                                        </p>
+                                    </div>
+                                </section-content-left>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/bdi-1.JPG"/>
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/bdi-2.JPG"/>
+                                </section-content-right>
+                            </section-content>
+                        </li>
+                        <li class="splide__slide" data-splide-hash="xcited">
+                            <section-content>
+                                <svg class="projects-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="projects-circle" cx="-25" cy="300" r="100"/>
+                                    <g class="projects-rect-container">
+                                        <rect class="projects-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                                    </g>
+                                    <g class="projects-ribbon-container">
+                                        <rect class="projects-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                                    </g>
+                                </svg>
+                                <section-content-left class="flex content-bottom text-left" style="height: 80vh;">
+                                    
+                                    <div>
+                                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">xCited</h1>
+                                        <p>
+                                            xcitED is a new & engaging way for children to explore & learn. We combine Augmented Reality with curriculum standards allowing students to effortlessly learn based on their individual capabilities. As an AR Developer for xcitED, I had the experience and the opportunity to work with different AR Technologies such as ARCore, Vuforia and ARKit. As we continued to develop the app, we have learned to optimize and create very efficient assets and code for a mobile platform.
+                                        </p>
+                                    </div>
+                                </section-content-left>
+                                <section-content-right class="background-blue projects-content-pic full-height">
+                                    <img style="z-index: 5;width: 100% ;height: 50%; object-fit: cover;" class="profile-pic" src="assets/portfolio/xcited.png"/>
+                                    <video style="width: 100%; height: 50%; margin-top: -3vh" autoplay muted controls>
+                                        <source src="assets/xcited.mp4" type="video/mp4">
+                                    </video>
+                                </section-content-right>
+                            </section-content>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -157,7 +324,7 @@
                 }
             });
             var currentIndex = 0;
-            var colors = ['#3540FA', '#FF7826', '#797EDA', '#080222','#3540FA','#FF7826', '#797EDA'];
+            var colors = ['#3540FA', '#FF7826', '#797EDA', '#080222','#3540FA','#FF7826', '#797EDA', '#080222', '#3540FA', '#FF7826', '#797EDA', '#080222','#3540FA','#FF7826', '#797EDA', '#080222'];
             fade(0);
             
             splide.on('move', function(newIndex){
@@ -173,8 +340,11 @@
                     .setProperty('--bg-color', colors[newIndex]);
             }
 
-            splide.mount();
+            splide.mount( window.splide.Extensions );
 
+            function GoToSlide(id){
+                splide.go(id);
+            }
         </script>
     </body>
 </html>
