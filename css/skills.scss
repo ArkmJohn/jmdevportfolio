@@ -1,0 +1,412 @@
+$backgroundColor: #fff;
+$baseFontColor: #080222;
+$baseFont: 'Lato',
+sans-serif;
+$titleFont: 'Anton',
+sans-serif;
+$blueColor: #3540FA;
+$orangeColor: #FF7826;
+$purpleColor: #797EDA;
+
+section-content {
+    height: auto;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+section-content-left{
+    z-index: 5;
+    a{
+        text-decoration: none !important;
+    }
+}
+
+.header-title {
+    a {
+        h2 {
+            color: $backgroundColor !important;
+        }
+    }
+}
+
+.projects-content-pic {
+    width: 45vw;
+    padding-left: 0;
+    padding-right: 0;
+    float: right;
+    z-index: 5;
+}
+
+.profile-pic {
+    object-fit: contain;
+    object-position: center;
+}
+
+.projects-svg-line{
+    position: absolute;
+    z-index: 0;
+    .projects-line-container{
+        transform: translateX(15vw) translateY(-3vh);
+        stroke-dasharray: 5000;
+        stroke-dashoffset: 5000;
+        animation: dash 10s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+}
+
+.projects-svg {
+    position: absolute;
+    z-index: 0;
+
+    .projects-circle {
+        fill: $blueColor;
+    }
+
+    .projects-rect-container {
+        transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+
+        .projects-rect {
+            fill: #E5E1FC;
+        }
+    }
+
+    .projects-ribbon-container {
+        transform: translateX(20vw) translateY(35vh) rotate(50deg);
+
+        .projects-ribbon {
+            fill: $purpleColor;
+        }
+    }
+}
+
+.remove-arrows{
+    display: none;
+}
+
+.home-menu-section{
+    display: grid;
+    grid-template-areas: 'webdev'
+    'xrdev'
+    'gamedev';
+    .button-web{
+        grid-area: webdev;
+        height: 35vh;
+        h3{padding-left: 1em;font-size: 3.5em;}
+
+        a{
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .web-svg {
+            position: absolute;
+
+            .web-line-path {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash-b 3s ease-in-out 1;
+                animation-fill-mode: forwards;
+                transition: .2s;
+
+            }
+
+            .web-circle {
+                fill: $orangeColor;
+                animation: wave 3s ease-in-out infinite;
+            }
+
+            .web-rect-container {
+                transform: translateX(570px) translateY(75px) rotate(-50deg);
+
+                .web-rect {
+                    fill: #E5E1FC;
+                    opacity: .8;
+                    animation: wave 3s ease-in-out infinite;
+                }
+            }
+            .web-ribbon-container {
+                transform: translateX(650px) translateY(-20px) rotate(50deg);
+                .web-ribbon {
+                    fill: $purpleColor;
+                    animation: wave 3s ease-in-out infinite;
+                }
+            }
+        }
+
+        &:hover {
+            h3 {
+                padding-left: 6vw;
+
+                &:before {
+                    content: '>';
+                }
+
+                &:after {
+                    content: '<';
+                }
+            }
+
+            .web-svg {
+                .web-line-path {
+                    opacity: .5;
+                    stroke-width: 5;
+                    filter: blur(5px);
+                }
+
+                .web-circle {
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+
+                .web-rect-container .projects-rect {
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+
+                .web-ribbon-container .projects-ribbon {
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+    .button-xr{
+        grid-area: xrdev;
+        height: 33vh;
+        h3{padding-left: 1em;font-size: 3.5em;}
+        a{
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .xr-svg {
+            position: absolute;
+
+            .xr-circle {
+                fill: $blueColor;
+                animation: wave 2.5s ease-in-out infinite;
+            }
+
+            .xr-line-container {
+                transform: translateX(220px) translateY(-20px);
+
+                .about-line-path {
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash-b 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                    transition: .3s;
+                }
+            }
+
+            .xr-rect-container {
+                transform: translateX(550px) translateY(200px) rotate(-30deg);
+
+                .xr-rect {
+                    animation: wave 3.5s ease-in-out infinite;
+                    fill: #E5E1FC;
+                    opacity: .8;
+                }
+            }
+
+            .xr-ribbon-container {
+                transform: translateX(400px) translateY(130px) rotate(-50deg);
+
+                .xr-ribbon {
+                    animation: wave 3s ease-in-out infinite;
+                    fill: $orangeColor;
+                }
+            }
+        }
+        &:hover {
+            h3 {
+                padding-left: 6vw;
+
+                &:before {
+                    content: '>';
+                }
+
+                &:after {
+                    content: '<';
+                }
+            }
+
+            .xr-svg {
+                .xr-line-container {
+                    .xr-line-path {
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+
+                .xr-circle {
+                    animation: circle-set .2s linear 1;
+                    animation-fill-mode: forwards;
+                }
+
+                .xr-rect-container {
+                    .xr-rect {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                .xr-ribbon-container {
+                    .xr-ribbon {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+    .button-game{
+        grid-area: gamedev;
+        height: 33vh;
+        h3{padding-left: 1em;font-size: 3.5em;}
+
+        a{
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .game-svg {
+            position: absolute;
+
+            .game-line-container {
+                transform: translateX(-5vw) translateY(-5vh) scale(1.3);
+
+                .game-line-path {
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash-b 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .game-rect-container {
+
+                transform: translateX(15vw) translateY(5vh) rotate(-40deg);
+
+                .game-rect {
+                    animation: wave 3s ease-in-out infinite;
+                    fill: $purpleColor;
+                }
+            }
+
+            .game-ribbon-container {
+                transform: translateX(30vw) translateY(3vh) rotate(50deg);
+
+                .game-ribbon {
+                    animation: wave 2.8s ease-in-out infinite;
+                    fill: #E5E1FC;
+                }
+            }
+        }
+
+        &:hover {
+            h3 {
+                padding-left: 5vw;
+
+                &:after {
+                    content: '..';
+                }
+            }
+
+            .game-svg {
+                .game-line-container {
+                    .game-line-path {
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+
+                .game-rect-container {
+                    .game-rect {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                .game-ribbon-container {
+                    .game-ribbon {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 5000;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100%{
+        stroke-dashoffset: 5000;
+    }
+}
+@keyframes dash-b {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes trace {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dashoffset: 500;
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+    }
+
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    50% {
+        transform: translateY(1vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes circle-set {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(2vh);
+    }
+}

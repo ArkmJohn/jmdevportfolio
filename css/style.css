@@ -35,8 +35,18 @@ section {
   color: black;
 }
 
+.background-black {
+  background-color: black;
+  color: white;
+}
+
 .background-orange {
   background-color: #FF7826;
+  color: white;
+}
+
+.background-purple {
+  background-color: #797EDA;
   color: white;
 }
 

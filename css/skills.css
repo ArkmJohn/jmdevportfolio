@@ -1,0 +1,506 @@
+section-content {
+  height: auto;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+section-content-left {
+  z-index: 5;
+}
+
+section-content-left a {
+  text-decoration: none !important;
+}
+
+.header-title a h2 {
+  color: #fff !important;
+}
+
+.projects-content-pic {
+  width: 45vw;
+  padding-left: 0;
+  padding-right: 0;
+  float: right;
+  z-index: 5;
+}
+
+.profile-pic {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.projects-svg-line {
+  position: absolute;
+  z-index: 0;
+}
+
+.projects-svg-line .projects-line-container {
+  -webkit-transform: translateX(15vw) translateY(-3vh);
+          transform: translateX(15vw) translateY(-3vh);
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  -webkit-animation: dash 10s ease-in-out infinite;
+          animation: dash 10s ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.projects-svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.projects-svg .projects-circle {
+  fill: #3540FA;
+}
+
+.projects-svg .projects-rect-container {
+  -webkit-transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+          transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+}
+
+.projects-svg .projects-rect-container .projects-rect {
+  fill: #E5E1FC;
+}
+
+.projects-svg .projects-ribbon-container {
+  -webkit-transform: translateX(20vw) translateY(35vh) rotate(50deg);
+          transform: translateX(20vw) translateY(35vh) rotate(50deg);
+}
+
+.projects-svg .projects-ribbon-container .projects-ribbon {
+  fill: #797EDA;
+}
+
+.remove-arrows {
+  display: none;
+}
+
+.home-menu-section {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'webdev' 'xrdev' 'gamedev';
+}
+
+.home-menu-section .button-web {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: webdev;
+  height: 35vh;
+}
+
+.home-menu-section .button-web h3 {
+  padding-left: 1em;
+  font-size: 3.5em;
+}
+
+.home-menu-section .button-web a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home-menu-section .button-web .web-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-web .web-svg .web-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash-b 3s ease-in-out 1;
+          animation: dash-b 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.home-menu-section .button-web .web-svg .web-circle {
+  fill: #FF7826;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-web .web-svg .web-rect-container {
+  -webkit-transform: translateX(570px) translateY(75px) rotate(-50deg);
+          transform: translateX(570px) translateY(75px) rotate(-50deg);
+}
+
+.home-menu-section .button-web .web-svg .web-rect-container .web-rect {
+  fill: #E5E1FC;
+  opacity: .8;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-web .web-svg .web-ribbon-container {
+  -webkit-transform: translateX(650px) translateY(-20px) rotate(50deg);
+          transform: translateX(650px) translateY(-20px) rotate(50deg);
+}
+
+.home-menu-section .button-web .web-svg .web-ribbon-container .web-ribbon {
+  fill: #797EDA;
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+}
+
+.home-menu-section .button-web:hover h3 {
+  padding-left: 6vw;
+}
+
+.home-menu-section .button-web:hover h3:before {
+  content: '>';
+}
+
+.home-menu-section .button-web:hover h3:after {
+  content: '<';
+}
+
+.home-menu-section .button-web:hover .web-svg .web-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-web:hover .web-svg .web-circle {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-web:hover .web-svg .web-rect-container .projects-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-web:hover .web-svg .web-ribbon-container .projects-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-xr {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: xrdev;
+  height: 33vh;
+}
+
+.home-menu-section .button-xr h3 {
+  padding-left: 1em;
+  font-size: 3.5em;
+}
+
+.home-menu-section .button-xr a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .button-xr .xr-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-xr .xr-svg .xr-circle {
+  fill: #3540FA;
+  -webkit-animation: wave 2.5s ease-in-out infinite;
+          animation: wave 2.5s ease-in-out infinite;
+}
+
+.home-menu-section .button-xr .xr-svg .xr-line-container {
+  -webkit-transform: translateX(220px) translateY(-20px);
+          transform: translateX(220px) translateY(-20px);
+}
+
+.home-menu-section .button-xr .xr-svg .xr-line-container .about-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash-b 3s ease-in-out 1;
+          animation: dash-b 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home-menu-section .button-xr .xr-svg .xr-rect-container {
+  -webkit-transform: translateX(550px) translateY(200px) rotate(-30deg);
+          transform: translateX(550px) translateY(200px) rotate(-30deg);
+}
+
+.home-menu-section .button-xr .xr-svg .xr-rect-container .xr-rect {
+  -webkit-animation: wave 3.5s ease-in-out infinite;
+          animation: wave 3.5s ease-in-out infinite;
+  fill: #E5E1FC;
+  opacity: .8;
+}
+
+.home-menu-section .button-xr .xr-svg .xr-ribbon-container {
+  -webkit-transform: translateX(400px) translateY(130px) rotate(-50deg);
+          transform: translateX(400px) translateY(130px) rotate(-50deg);
+}
+
+.home-menu-section .button-xr .xr-svg .xr-ribbon-container .xr-ribbon {
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+  fill: #FF7826;
+}
+
+.home-menu-section .button-xr:hover h3 {
+  padding-left: 6vw;
+}
+
+.home-menu-section .button-xr:hover h3:before {
+  content: '>';
+}
+
+.home-menu-section .button-xr:hover h3:after {
+  content: '<';
+}
+
+.home-menu-section .button-xr:hover .xr-svg .xr-line-container .xr-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-xr:hover .xr-svg .xr-circle {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-xr:hover .xr-svg .xr-rect-container .xr-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-xr:hover .xr-svg .xr-ribbon-container .xr-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-game {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gamedev;
+  height: 33vh;
+}
+
+.home-menu-section .button-game h3 {
+  padding-left: 1em;
+  font-size: 3.5em;
+}
+
+.home-menu-section .button-game a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.home-menu-section .button-game .game-svg {
+  position: absolute;
+}
+
+.home-menu-section .button-game .game-svg .game-line-container {
+  -webkit-transform: translateX(-5vw) translateY(-5vh) scale(1.3);
+          transform: translateX(-5vw) translateY(-5vh) scale(1.3);
+}
+
+.home-menu-section .button-game .game-svg .game-line-container .game-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash-b 3s ease-in-out 1;
+          animation: dash-b 3s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-game .game-svg .game-rect-container {
+  -webkit-transform: translateX(15vw) translateY(5vh) rotate(-40deg);
+          transform: translateX(15vw) translateY(5vh) rotate(-40deg);
+}
+
+.home-menu-section .button-game .game-svg .game-rect-container .game-rect {
+  -webkit-animation: wave 3s ease-in-out infinite;
+          animation: wave 3s ease-in-out infinite;
+  fill: #797EDA;
+}
+
+.home-menu-section .button-game .game-svg .game-ribbon-container {
+  -webkit-transform: translateX(30vw) translateY(3vh) rotate(50deg);
+          transform: translateX(30vw) translateY(3vh) rotate(50deg);
+}
+
+.home-menu-section .button-game .game-svg .game-ribbon-container .game-ribbon {
+  -webkit-animation: wave 2.8s ease-in-out infinite;
+          animation: wave 2.8s ease-in-out infinite;
+  fill: #E5E1FC;
+}
+
+.home-menu-section .button-game:hover h3 {
+  padding-left: 5vw;
+}
+
+.home-menu-section .button-game:hover h3:after {
+  content: '..';
+}
+
+.home-menu-section .button-game:hover .game-svg .game-line-container .game-line-path {
+  opacity: .5;
+  stroke-width: 5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home-menu-section .button-game:hover .game-svg .game-rect-container .game-rect {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home-menu-section .button-game:hover .game-svg .game-ribbon-container .game-ribbon {
+  -webkit-animation: circle-set .2s linear 1;
+          animation: circle-set .2s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 5000;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 5000;
+  }
+}
+
+@-webkit-keyframes dash-b {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-b {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes trace {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes trace {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@-webkit-keyframes circle-set {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+}
+
+@keyframes circle-set {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+}
+/*# sourceMappingURL=skills.css.map */

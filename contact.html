@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>John Mark Adriano - Contact Me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="assets/crystals/model-styles.css">
+        <script defer src="assets/fontawesome/js/all.js"></script> <!--load all styles -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="js/splide-3.6.9/dist/css/splide.min.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <!-- <div class="header-one">
+                <burger>
+                </burger>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div> -->
+            <div class="header-title">
+                <a href="index.html"><h2>John Mark Adriano</h2></a>
+            </div>
+        </header>
+        <!-- <div  id="particles-js" ></div> -->
+        <section class="full-section background-purple">
+            <section-content>
+                <svg class="about-svg" width="55vw" height="100vh" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g class="about-line-container">
+                        <path class="about-line-path" d="M-47.3517 0.632202C-56.896 48.7278 -25.4001 146.174 176.938 151.192C429.86 157.466 440.271 108.058 578.663 205.295C717.054 302.532 878.438 286.069 1031.15 273.523" stroke="white" stroke-width="2"/>
+                    </g>
+                    <circle class="about-circle" cx="-25" cy="300" r="100"/>
+                    <g class="about-rect-container">
+                        <rect class="about-rect" x="0" y="0" width="40" height="25" rx="0"/>
+                    </g>
+                    <g class="about-ribbon-container">
+                        <rect class="about-ribbon" x="0" y="0" width="100" height="10" rx="0"/>
+                    </g>
+                </svg>
+                <section-content-left class="flex content-bottom text-left" style="min-height: 80vh;">
+
+                    <div>
+                        <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">Want to contact me?</h1>
+                        <p>Here are some ways to do so.</p>
+                    </div>
+                </section-content-left>
+                <section-content-right class="contact-container background-purple full-height">
+                    <a class="contact background-blue email" href="mailto:adrianojohnmark@gmail.com"><h3><i class="icon fas fa-envelope-open"></i>Email</h3></a>
+                    <a class="contact background-orange linkedin" href="https://www.linkedin.com/in/john-mark-adriano-b96103a5/"><h3><i class="icon fab fa-linkedin-in"></i>Linkedin</h3></a>
+                    <a class="contact background-black github" href="https://github.com/ArkmJohn/"><h3><i class="icon fab fa-github"></i>Github</h3></a>
+                    <a class="contact background-blue twitter" href="https://twitter.com/John_adriano_"><h3><i class="icon fab fa-twitter"></i>Twitter</h3></a>
+                    <div class="contact background-orange discord"><h4><i class="icon fab fa-discord"></i>Or Add me on discord using my usernamename johnmark#9331</h4></div>
+                </section-content-right>
+            </section-content>
+        </section>
+
+
+        <script src="" async defer></script>
+        <script>
+            var contacts = $('.contact');
+            contacts.each(function(index){
+                $(this).hover(
+                    function(){
+                        $(this).addClass('contact-hovered');
+                        checkContact();
+                    },
+                    function(){
+                        $(this).removeClass('contact-hovered');
+                        checkContact();
+                    }
+                )
+            });
+
+            function checkContact(){
+                var checker = false;
+                contacts.each(function(index){
+                    if($(this).hasClass('contact-hovered'))
+                    {
+                        checker = true;
+                    }
+                });
+
+                if(checker){
+                    contacts.each(function(){
+                        if($(this).hasClass('contact-hovered')){
+
+                        }
+                        else{
+                            $(this).addClass('contact-non-hovered');
+                        }
+                    });
+                }else{
+                    contacts.each(function(){
+                        $(this).removeClass('contact-non-hovered');
+                        $(this).removeClass('contact-hovered');
+                    })
+                }
+            }
+        </script>
+    </body>
+</html>

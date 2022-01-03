@@ -4,6 +4,34 @@ section-content {
   max-height: 100vh;
 }
 
+section-content-left {
+  z-index: 5;
+}
+
+section-content-left a {
+  text-decoration: none !important;
+}
+
+.lot-designs section-content section-content-left div .project-content-par {
+  min-height: 15vh;
+}
+
+.nftfoh section-content section-content-left div .project-content-par {
+  min-height: 25vh;
+}
+
+.emirates-post section-content section-content-left div .project-content-par {
+  min-height: 15vh;
+}
+
+.the-wanderer section-content section-content-left div .project-content-par {
+  min-height: 35vh;
+}
+
+.bdinc section-content section-content-left div .project-content-par {
+  min-height: 15vh;
+}
+
 .header-title a h2 {
   color: #fff !important;
 }
@@ -31,6 +59,12 @@ section-content {
 .projects-svg-line .projects-line-container {
   -webkit-transform: translateX(15vw) translateY(-3vh);
           transform: translateX(15vw) translateY(-3vh);
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  -webkit-animation: dash 10s ease-in-out infinite;
+          animation: dash 10s ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .projects-svg {
@@ -174,5 +208,29 @@ section-content {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 5000;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 5000;
+  }
 }
 /*# sourceMappingURL=projects.css.map */

@@ -44,8 +44,17 @@ section{
     color: black;
 }
 
+.background-black {
+    background-color: black;
+    color: white;
+}
+
 .background-orange{
     background-color: $orangeColor;
+    color: white;
+}
+.background-purple {
+    background-color: $purpleColor;
     color: white;
 }
 .background-blue{
