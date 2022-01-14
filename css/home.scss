@@ -372,3 +372,94 @@ $purpleColor: #797EDA;
         transform: translateY(2vh);
     }
 }
+
+@media only screen and (max-width: 1201px) {
+    .home-menu-section{
+        min-height: 80vh;
+        width: 100vw;
+        grid-template-areas: 'project project'
+        'about about'
+        'skills skills'
+        'contact contact';
+    }
+    .home-menu-section .button-project h3{
+        z-index: 1;
+    }
+    .home-menu-section .button-project {
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-end;
+        text-align: left;
+        justify-content: left;
+        h3{
+            margin-top: .1em;
+            margin-bottom: 0;
+
+        }
+        svg {
+            width: 100vw;
+            height: 30vh;
+            z-index: 0;
+        }
+    }
+    .home-menu-section .button-about {
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-end;
+        text-align: left;
+        justify-content: left;
+
+        h3 {
+            margin-top: .1em;
+            margin-bottom: 0;
+            z-index: 1;
+        }
+        svg {
+            width: 100vw;
+            height: 30vh;
+            z-index: 0;
+        }
+    }
+    .home-menu-section .button-skills {
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-end;
+        text-align: left;
+        justify-content: left;
+
+        h3 {
+            margin-top: .1em;
+            margin-bottom: 0;
+
+        }
+        svg {
+            width: 100vw;
+            height: 30vh;
+            transform: translateY(-100%);
+            z-index: 0;
+            .skills-line-container{
+                transform: translateX(-5vw) translateY(0) scale(1.3);
+            }
+        }
+    }
+    .home-menu-section .button-contact{
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-end;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        h3 {
+            margin-top: .1em;
+            padding-left:5vw;
+            margin-bottom: 0;
+        }
+        svg {
+            position: absolute;
+            width: 100vw;
+            height: 30vh;
+            z-index: 0;
+        }
+    }
+
+}

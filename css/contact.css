@@ -5,7 +5,7 @@ section-content {
 }
 
 section-content section-content-right {
-  width: 45vw !important;
+  width: 45vw;
   padding-left: 0;
   padding-right: 0;
   border-left: solid 1px #FF7826;
@@ -136,5 +136,24 @@ section-content section-content-right {
 
 .contact-container .contact-hovered {
   min-height: 28vh;
+}
+
+@media only screen and (max-width: 1201px) {
+  section-content {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  section-content svg {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+  section-content-left {
+    z-index: 1;
+  }
+  section-content-right {
+    width: 100vw !important;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -212,8 +212,9 @@
                 </div>
             </div>
         </section>
+        <a href="javascript:GoToSlide(0);" class="slides-to-top slides-to-none"><div class="arrow-container"><i class="fas fa-arrow-up"></i></div></a>
 
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script defer src="assets/fontawesome/js/all.js"></script> <!--load all styles -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
@@ -247,8 +248,18 @@
                     fade(newIndex);
                 }
                 currentIndex = newIndex;
+                checkSlideButton();
             });
-            
+            checkSlideButton();
+            function checkSlideButton(){
+                if(currentIndex == 0){
+                    $('.slides-to-top').addClass('slides-to-none');
+                    $('.slides-to-top').removeClass('slides-to-one');
+                }else{
+                    $('.slides-to-top').removeClass('slides-to-none');
+                    $('.slides-to-top').addClass('slides-to-one');
+                }
+            }
             function fade(newIndex){
                 document.documentElement.style
                     .setProperty('--bg-color', colors[newIndex]);

@@ -58,3 +58,22 @@ section-content{
         }
     }
 }
+
+@media only screen and (max-width: 1201px) {
+    section-content{
+        max-height:max-content;
+        svg{
+            z-index: 0;
+        }
+    }
+    section-content-left{
+        height: 100vh;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex !important;
+        z-index: 1;
+    }
+    section-content-right{
+        display: none;
+    }
+}

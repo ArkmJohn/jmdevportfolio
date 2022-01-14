@@ -208,3 +208,20 @@ section-content-left{
         stroke-dashoffset: 5000;
     }
 }
+
+@media only screen and (max-width: 1201px) {
+    section-content-right{
+        display: none;
+    }
+    .the-wanderer{
+        p{
+            font-size: 1.1em;
+        }
+    }
+    li section-content{
+        svg{
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+    }
+}

@@ -55,4 +55,31 @@ section-content {
 .about-svg .about-ribbon-container .about-ribbon {
   fill: #797EDA;
 }
+
+@media only screen and (max-width: 1201px) {
+  section-content {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  section-content svg {
+    z-index: 0;
+  }
+  section-content-left {
+    height: 100vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    z-index: 1;
+  }
+  section-content-right {
+    display: none;
+  }
+}
 /*# sourceMappingURL=about.css.map */

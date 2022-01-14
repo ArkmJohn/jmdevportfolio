@@ -154,6 +154,7 @@
                                         <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">VR Immersive</h1>
                                         <p class="project-content-par">
                                             With my internship on Zaini Media FZ LLC, I have created and lead the development of a few projects. All the projects showcased were completed in a span of 3 months and I had complete control of the development.
+                                            <br/><a class="only-show-mob" style="color: black;" href="assets/zaini-vid.mp4" target="_blank">Watch Trailer</a>
                                         </p>
                                     </div>
                                 </section-content-left>
@@ -229,7 +230,6 @@
                                     </g>
                                 </svg>
                                 <section-content-left class="flex content-bottom text-left" style="height: 100vh;">
-                                    
                                     <div>
                                         <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">The Wanderer</h1>
                                         <div class="project-content-par">
@@ -238,6 +238,7 @@
                                             </p>
                                             <p>
                                                 This Project was developed with Level Design, AI Development and Randomly Generated Objects in mind. With that said, I lead the project with a group of 3 programmers. I had ample work done on AI and Level Design. I was also in-charge of UI and level generation. ​
+                                            <br/><a class="only-show-mob" style="color: black;" href="https://www.youtube.com/watch?v=5iEkDwTsy7A" target="_blank">Watch Trailer</a>
                                             </p>
                                         </div>
                                     </div>
@@ -291,6 +292,7 @@
                                         <h1 style="line-height: 1em; margin-bottom: .2em" class="huge-title">xCited</h1>
                                         <p class="project-content-par">
                                             xcitED is a new & engaging way for children to explore & learn. We combine Augmented Reality with curriculum standards allowing students to effortlessly learn based on their individual capabilities. As an AR Developer for xcitED, I had the experience and the opportunity to work with different AR Technologies such as ARCore, Vuforia and ARKit. As we continued to develop the app, we have learned to optimize and create very efficient assets and code for a mobile platform.
+                                            <br/><a class="only-show-mob" style="color: #FF7826;" href="assets/xcited.mp4" target="_blank">Watch Trailer</a>
                                         </p>
                                     </div>
                                 </section-content-left>
@@ -306,8 +308,8 @@
                 </div>
             </div>
         </section>
-
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <a href="javascript:GoToSlide(0);" class="slides-to-top slides-to-none"><div class="arrow-container"><i class="fas fa-arrow-up"></i></div></a>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script defer src="assets/fontawesome/js/all.js"></script> <!--load all styles -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="js/splide-3.6.9/dist/js/splide.min.js"></script>
@@ -320,7 +322,7 @@
                 loopCount: Infinity,
                 smartBackspace: true
             });
-        </script>
+            </script>
         <script>
             var splide = new Splide('.splide',{
                 direction: 'ttb',
@@ -341,7 +343,18 @@
                     fade(newIndex);
                 }
                 currentIndex = newIndex;
+                checkSlideButton();
             });
+            checkSlideButton();
+            function checkSlideButton(){
+                if(currentIndex == 0){
+                    $('.slides-to-top').addClass('slides-to-none');
+                    $('.slides-to-top').removeClass('slides-to-one');
+                }else{
+                    $('.slides-to-top').removeClass('slides-to-none');
+                    $('.slides-to-top').addClass('slides-to-one');
+                }
+            }
             
             function fade(newIndex){
                 document.documentElement.style

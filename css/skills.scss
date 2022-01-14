@@ -410,3 +410,12 @@ section-content-left{
         transform: translateY(2vh);
     }
 }
+@media only screen and (max-width: 1201px) {
+    li section-content svg{
+        width: 100vw;
+        height: 100vh;
+    }
+    section-content-right{
+        display: none;
+    }
+}
