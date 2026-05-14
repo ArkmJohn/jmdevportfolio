@@ -16,39 +16,25 @@ section-content {
 
 section-content-left{
     z-index: 5;
+    height: 100%;
     a{
         text-decoration: none !important;
     }
+    div 
+    {
+        height: auto;
+        align-items: flex-end;
+        .project-content-par 
+        {
+            padding-bottom: 1em;
+        }
+    }
 }
 
-.lot-designs{
-    section-content section-content-left div .project-content-par {
-        min-height: 15vh;
-    }
-}
-.nftfoh{
-    section-content section-content-left div .project-content-par {
-        min-height: 25vh;
-    }
-}
-.emirates-post {
-    section-content section-content-left div .project-content-par {
-        min-height: 15vh;
-    }
-}
-.the-wanderer {
-    section-content section-content-left div .project-content-par {
-        min-height: 35vh;
-    }
-}
-.bdinc {
-    section-content section-content-left div .project-content-par {
-        min-height: 15vh;
-    }
-}
+
 .header-title {
     a {
-        h2 {
+        h1, h2, h4 {
             color: $backgroundColor !important;
         }
     }
@@ -110,17 +96,53 @@ section-content-left{
 
 .home-menu-section{
     display: grid;
-    grid-template-areas: 'lot lot'
+    grid-template-areas: 
+    'lot crypto'
+    'meme citti'
     'vri nftfoh'
     'eps wander'
     'bdinc xcited';
+    
+    .home-button
+    {
+        a
+        {
+            img
+            {
+                width: 100%;
+                height: 20vh;
+                object-fit: cover;    
+            }
+        }
+    }
     .home-lot{
         grid-area: lot;
         a{
             img{
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .home-crypto{
+        grid-area: crypto;
+        a{
+            img{
+                object-position: center;
+            }
+        }
+    }
+    .home-citti{
+        grid-area: citti;
+        a{
+            img{
+                object-position: center;
+            }
+        }
+    }
+    .home-meme{
+        grid-area: meme;
+        a{
+            img{
                 object-position: center;
             }
         }
@@ -130,9 +152,6 @@ section-content-left{
         a{
 
             img{
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }
@@ -142,9 +161,6 @@ section-content-left{
         a{
 
             img{
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }
@@ -153,9 +169,6 @@ section-content-left{
         grid-area: eps;
         a {
             img {
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }
@@ -164,9 +177,6 @@ section-content-left{
         grid-area: wander;
         a {
             img {
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }
@@ -175,9 +185,6 @@ section-content-left{
         grid-area: bdinc;
         a {
             img {
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }
@@ -186,9 +193,6 @@ section-content-left{
         grid-area: xcited;
         a {
             img {
-                width: 100%;
-                height: 25vh;
-                object-fit: cover;
                 object-position: top;
             }
         }

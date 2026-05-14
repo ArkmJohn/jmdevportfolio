@@ -23,7 +23,7 @@ section-content-left{
 
 .header-title {
     a {
-        h2 {
+        h1, h2, h4 {
             color: $backgroundColor !important;
         }
     }
@@ -85,14 +85,19 @@ section-content-left{
 
 .home-menu-section{
     display: grid;
-    grid-template-areas: 'webdev'
-    'xrdev'
-    'gamedev';
-    .button-web{
-        grid-area: webdev;
-        height: 35vh;
+    grid-template-areas: 
+    'gamedev'
+    'webdev'
+    'blockdev'
+    'xrdev';
+    .button-wrapper
+    {
+        overflow-y: hidden;
+        position: relative;
+        height: 25vh;
         h3{padding-left: 1em;font-size: 3.5em;}
-
+    }
+    .button-web{
         a{
             img{
                 width: 100%;
@@ -174,9 +179,6 @@ section-content-left{
         }
     }
     .button-xr{
-        grid-area: xrdev;
-        height: 33vh;
-        h3{padding-left: 1em;font-size: 3.5em;}
         a{
 
             img{
@@ -187,14 +189,13 @@ section-content-left{
         }
         .xr-svg {
             position: absolute;
-
             .xr-circle {
                 fill: $blueColor;
                 animation: wave 2.5s ease-in-out infinite;
             }
 
             .xr-line-container {
-                transform: translateX(220px) translateY(-20px);
+                transform: translateX(220px) translateY(25px);
 
                 .about-line-path {
                     stroke-dasharray: 1000;
@@ -268,10 +269,83 @@ section-content-left{
         }
     }
     .button-game{
-        grid-area: gamedev;
-        height: 33vh;
-        h3{padding-left: 1em;font-size: 3.5em;}
+        a{
 
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .game-svg {
+            position: absolute;
+
+            .game-line-container {
+                transform: translateX(-5vw) translateY(-5vh) scale(1.3);
+
+                .game-line-path {
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash-b 3s ease-in-out 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .game-rect-container {
+
+                transform: translateX(15vw) translateY(5vh) rotate(-40deg);
+
+                .game-rect {
+                    animation: wave 3s ease-in-out infinite;
+                    fill: $purpleColor;
+                }
+            }
+
+            .game-ribbon-container {
+                transform: translateX(30vw) translateY(3vh) rotate(50deg);
+
+                .game-ribbon {
+                    animation: wave 2.8s ease-in-out infinite;
+                    fill: #E5E1FC;
+                }
+            }
+        }
+
+        &:hover {
+            h3 {
+                padding-left: 5vw;
+
+                &:after {
+                    content: '..';
+                }
+            }
+
+            .game-svg {
+                .game-line-container {
+                    .game-line-path {
+                        opacity: .5;
+                        stroke-width: 5;
+                        filter: blur(5px);
+                    }
+                }
+
+                .game-rect-container {
+                    .game-rect {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                .game-ribbon-container {
+                    .game-ribbon {
+                        animation: circle-set .2s linear 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+    .button-block{
         a{
 
             img{

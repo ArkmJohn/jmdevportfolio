@@ -14,13 +14,14 @@ section-content{
     max-height: 100vh;
 }
 
-.header-title{
-    a{
-        h2{
+.header-title {
+    a {
+        h1, h2, h4 {
             color: $backgroundColor !important;
         }
     }
 }
+
 .about-content-pic{
     width:45vw;
     padding-left: 0;

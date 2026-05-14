@@ -58,23 +58,16 @@ section {
 .background-fade {
   background-color: var(--bg-color);
   color: white;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 section-content {
   min-width: 100vw;
   min-height: 100vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -101,19 +94,12 @@ section-content-right {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .absolute-right {
@@ -123,11 +109,8 @@ section-content-right {
 
 .absolute-center {
   position: absolute;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .text-left {
@@ -135,30 +118,18 @@ section-content-right {
 }
 
 .content-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-center-left {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  align-items: center;
+  justify-content: left;
 }
 
 .content-bottom {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  align-items: flex-end;
+  justify-content: baseline;
 }
 
 .huge-title {
@@ -172,71 +143,52 @@ section-content-right {
 header .header-one {
   z-index: 9999;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
 }
-
 header .header-one ul {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
 }
-
 header .header-one ul li {
   padding: 0 2vw;
   text-decoration: none;
   list-style: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 header .header-one ul li a {
   text-decoration: none;
   color: white;
 }
-
 header .header-one ul li:hover {
   text-decoration: underline;
   font-size: 1.2em;
 }
-
 header .header-title {
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: 5vh;
   left: 5vw;
 }
-
 header .header-title a {
   color: #080222;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 1em;
+}
+header .header-title a h2 {
+  margin-bottom: 0.1em;
+}
+header .header-title a h4 {
+  margin-top: 0.1em;
+  letter-spacing: 0;
 }
 
 .slides-to-top {
@@ -247,68 +199,47 @@ header .header-title a {
   background: #3540FA;
   border: solid 1px white;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: .3s;
-  transition: .3s;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
   cursor: pointer;
 }
-
 .slides-to-top .arrow-container {
   width: 50px;
   height: 50px;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
   display: flex;
   color: white;
   font-size: 2em;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .slides-to-top:hover {
   background: white;
 }
-
 .slides-to-top:hover .arrow-container {
   font-size: 2.2em;
   color: #3540FA;
 }
 
 .slides-to-none {
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   width: 0;
   height: 0;
   opacity: 0;
 }
-
 .slides-to-none .arrow-container {
   font-size: 0;
 }
 
 .slides-to-one {
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 1;
   width: 50px;
   height: 50px;
 }
-
 .slides-to-one .arrow-container {
   font-size: 2em;
 }
@@ -323,7 +254,7 @@ header .header-title a {
   }
   header .header-title a h2 {
     font-size: 1.5em;
-    letter-spacing: .5em;
+    letter-spacing: 0.5em;
   }
   .full-section {
     height: auto;
@@ -335,8 +266,7 @@ header .header-title a {
     font-size: 4em;
   }
   section-content {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
   section-content section-content-left {
     min-height: 90vh;
@@ -350,5 +280,4 @@ header .header-title a {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ section-content {
   max-height: 100vh;
 }
 
-.header-title a h2 {
+.header-title a h1, .header-title a h2, .header-title a h4 {
   color: #fff !important;
 }
 
@@ -28,37 +28,27 @@ section-content {
   z-index: 0;
   top: 0;
 }
-
 .about-svg .about-line-container .about-line-path {
-  -webkit-transform: translateY(20vh);
-          transform: translateY(20vh);
+  transform: translateY(20vh);
 }
-
 .about-svg .about-circle {
   fill: #3540FA;
 }
-
 .about-svg .about-rect-container {
-  -webkit-transform: translateX(40vw) translateY(50vh) rotate(-30deg);
-          transform: translateX(40vw) translateY(50vh) rotate(-30deg);
+  transform: translateX(40vw) translateY(50vh) rotate(-30deg);
 }
-
 .about-svg .about-rect-container .about-rect {
   fill: #E5E1FC;
 }
-
 .about-svg .about-ribbon-container {
-  -webkit-transform: translateX(20vw) translateY(35vh) rotate(50deg);
-          transform: translateX(20vw) translateY(35vh) rotate(50deg);
+  transform: translateX(20vw) translateY(35vh) rotate(50deg);
 }
-
 .about-svg .about-ribbon-container .about-ribbon {
   fill: #797EDA;
 }
 
 @media only screen and (max-width: 1201px) {
   section-content {
-    max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
   }
@@ -67,19 +57,12 @@ section-content {
   }
   section-content-left {
     height: 100vh;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
+    justify-content: flex-end;
+    align-items: flex-end;
     display: flex !important;
     z-index: 1;
   }
   section-content-right {
     display: none;
   }
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */
